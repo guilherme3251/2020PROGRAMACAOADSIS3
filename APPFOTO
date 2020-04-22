@@ -1,0 +1,19 @@
+public class AppFoto {
+
+	
+  
+  public static void main(String[] args) {
+
+
+try {
+			Filme java = new Foto();
+			java.setNome("Editar Foto");
+			java.setDataFOTO();
+			java.setEscolherfoto(2);
+
+		} catch (Exception exc) {
+			System.out.println("Mensagem de exceção: " + exc.getMessage());
+		}
+
+	}
+}
