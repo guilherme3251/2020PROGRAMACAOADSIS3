@@ -1,0 +1,40 @@
+//Encapsulamento
+O encapsulamento é um processo utilizado para proteger os campos e operações de uma classe (atributos e métodos),
+permitindo que apenas os membros públicos - em Java métodos Get / Set - sejam acessados pelos usuários de determinada classe. 
+Algumas vantagens para justificar o uso deste processo são: 
+
+1- Segurança - a comunicação só é feita por métodos modificadores de acesso, desta forma pode-se prevenir que usuários não autorizados vejam ou modifiquem algum campo protegido da classe.
+
+2- Manutenção - facilita a manutenção da classe pois ela pode ser feita de forma isolada; 
+
+3- Reduz acoplamento - até agora criamos os objetos usando a palavra-chave new. Segundo Mendes (2009) "[...] o mais recomendado é que a própria classe retorne um objeto de seu tipo, ou seja, em vez de usar o operador new, devemos executar um método público da classe, que deverá retornar um objeto para uso. Quanto menor o acoplamento entre classes, maior pode ser a reutilização dessa classe. É com base nesse conceito que o framework Spring opera" (MENDES, 2009, p. 102).
+
+ 
+Assim que uma classe é criada, seu código e seus dados, os quais são chamados de membros da classe, são determinados.
+Esses dados recebem o nome de variáveis membro ou variáveis de instância. 
+Já o código tem outra função de formar os métodos, os quais também podem ser denominados como métodos membro.
+
+O Encapsulamento serve também para controlar o acesso aos atributos e métodos de uma classe.
+É uma forma eficiente de proteger os dados manipulados dentro da classe, além de determinar onde esta classe poderá ser manipulada. 
+Usamos o nível de acesso mais restritivo, private, que faça sentido para um membro particular. 
+Sempre usamos private, a menos que tenhamos um bom motivo para deixá-lo com outro nível de acesso.
+
+
+
+//Métodos modificadores
+
+Os modificadores de acesso são padrões de visibilidade de acessos às classes, atributos e métodos. 
+Esses modificadores são palavras-chaves reservadas pelo Java, ou seja, palavras reservadas não podem ser usadas como nome de métodos, 
+classes ou atributos.
+Como boas práticas (best practices) do Java, na maioria das declarações de variáveis de instância são definidos os seus atributos
+com a palavra-chave private, para garantir a segurança de alterações acidentais, sendo somente acessíveis através dos métodos.
+Essa ação tem como efeito ajudar no encapsulamento dos dados, 
+preservando ainda mais a segurança e a aplicação de programação orientada a objetos do Java.
+
+Portanto, se uma classe puder ser acessada de fora do seu pacote sempre devemos fornecer métodos Acessores para preservarmos
+a flexibilidade de alterar a representação interna da classe. Se uma classe pública expor os campos de dados,
+como demonstrado na listagem um, provavelmente nunca conseguiremos alterar a sua representação, 
+visto que o código cliente já deve ter sido amplamente distribuído.
+
+
+
